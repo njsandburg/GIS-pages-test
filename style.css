@@ -1,4 +1,20 @@
+/* Keep your map styling */
 #map {
-  height: 100vh;
+  height: 80vh; /* or 600px if you prefer */
   width: 100%;
+}
+
+/* Style the welcome text */
+.intro-text {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.intro-text h1 {
+  color: #2a5d84;
+  font-size: 2em;
+}
+
+.intro-text p {
+  font-size: 18px;
 }
