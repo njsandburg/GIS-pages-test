@@ -1,5 +1,32 @@
-/* Keep your map styling */
+/* Fill full viewport and remove default margin */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Make body a vertical flex container */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for the intro text */
+.intro-text {
+  text-align: center;
+  padding: 20px;
+}
+
+.intro-text h1 {
+  color: #2a5d84;
+  font-size: 2em;
+}
+
+.intro-text p {
+  font-size: 18px;
+}
+
+/* Map fills remaining space */
 #map {
-  height: 80vh; /* or 600px if you prefer */
+  flex: 1;
   width: 100%;
 }
