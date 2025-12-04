@@ -2,12 +2,12 @@
 const map = L.map('map').setView([32.7157, -117.1611], 10);
 
 // Add the base map tiles
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+L.tileLayer('https://{s}.tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png', {
   attribution: '© OpenStreetMap contributors',
 }).addTo(map);
 
 // Load your local GeoJSON file (it must be in the same folder)
-fetch('SDG_Indicator_6.3.2_Clean_Water_and_Sanitation_-_Tract_20251021.geojson')
+fetch('SDG_Indicator_6.3.2_Clean_Water_andSanitation-_Tract_20251021.geojson')
   .then((response) => response.json())
   .then((data) => {
     L.geoJSON(data, {
